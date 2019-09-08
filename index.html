@@ -4,15 +4,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tianna's Trivia Game</title>
-    <link rel="stylsheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
 </head>
 <body>
+<div id="gameStart">
     <h1>Tianna's Halloween Trivia!</h1>
-    <p>Player, you will have 30 seconds to correctly answer eight questions
+        <p>Player, you will have 30 seconds to correctly answer eight questions
         based on Halloween history. Let's test your knowledge! Click the 
-        button below to begin.
-    </p>
-    <a href="trivia.html"><button>Click here</button></a>
-    <script src="assets/javascript/app.js"></script>
+        button below to begin.</p>
+</div>
+<!--Trivia Game-->
+<div id="triviaGame" class="d-none">
+    <h2>Time Remaining: <span id="timeLeft">60</span> seconds</h2>
+    <form id="triviaQuestions">
+        <p class="Question">What is Candy Corn's originally marketed name?</p>
+            <div id="Q1">
+                <input type="radio" name="choice1" value="1"> Chicken Feed
+                <input type="radio" name="choice1" value="0"> Kernel Juniors
+                <input type="radio" name="choice1" value="0"> Kandy Korn
+                <input type="radio" name="choice1" value="0"> Dragon Teeth
+            </div>
+        <p class="Question">Where did Halloween originate?</p>
+            <div id="Q2">
+                <input type="radio" name="choice2" value="0"> Mexico
+                <input type="radio" name="choice2" value="0"> Moscow
+                <input type="radio" name="choice2" value="1"> Ireland
+                <input type="radio" name="choice2" value="0"> Greece
+            </div>
+        <p class="Question">Which famous structure is rumoured to be haunted?</p>
+            <div id="Q3">
+                <input type="radio" name="choice3" value="0"> The Lincoln Memorial
+                <input type="radio" name="choice3" value="1"> The White House
+                <input type="radio" name="choice3" value="0"> Monticello
+                <input type="radio" name="choice3" value="0"> The Beinecke Library
+            </div>
+        <p class="Question">What is the night before Halloween sometimes referred to as?</p>
+            <div id="Q4">
+                <input type="radio" name="choice4" value="1"> Cabbage Night
+                <input type="radio" name="choice4" value="0"> Halloween Eve
+                <input type="radio" name="choice4" value="0"> All Hallows' Eve
+                <input type="radio" name="choice4" value="0"> Devil's Day
+            </div>
+        <p class="Question">What is the most popular Halloween candy in America?</p>
+            <div id="Q5">
+                <input type="radio" name="choice5" value="0"> Starburst
+                <input type="radio" name="choice5" value="0"> Snickers
+                <input type="radio" name="choice5" value="0"> M&M's
+                <input type="radio" name="choice5" value="1"> Skittles
+            </div>
+        <p class="Question">What is the fear of Halloween called?</p>
+            <div id="Q6">
+                <input type="radio" name="choice6" value="0"> Cucurbitophobia
+                <input type="radio" name="choice6" value="1"> Samhainophobia
+                <input type="radio" name="choice6" value="0"> Phasmophobia
+                <input type="radio" name="choice6" value="0"> Coimetrophobia
+            </div>
+        <p class="Question">According to superstition, if you stare into a mirror at midnight on Halloween, what will you see?</p>
+            <div id="Q7">
+                <input type="radio" name="choice7" value="0"> Salem Saberhagen
+                <input type="radio" name="choice7" value="0"> Your greatest fear
+                <input type="radio" name="choice7" value="0"> The Devil
+                <input type="radio" name="choice7" value="1"> Your future spouse
+            </div>
+        <p class="Question">What were Jack-O-Laterns made from before pumpkins became the standard?</p>
+            <div id="Q8">
+                <input type="radio" name="choice8" value="1"> Turnip
+                <input type="radio" name="choice8" value="0"> Watermelon
+                <input type="radio" name="choice8" value="0"> Cantelope
+                <input type="radio" name="choice8" value="0"> None of the above
+            </div>
+        <button>Submit</button>
+    </form>
+    </div>
+<!--End of game-->
+    <div id="endGame" class="d-none">
+        <p>Time is up!</p>
+        <p class="Score">Correct: <span id="correctAnswers"></span></p>
+        <p class="Score">Wrong: <span id="wrongAnswers"></span></p>
+        <p class="Score">Unanswered: <span id="Unanswered"></span></p>
+    </div>
+<script src="assets/javascript/app.js"></script>
 </body>
 </html>

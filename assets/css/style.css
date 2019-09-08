@@ -1,3 +1,7 @@
-.Question{
-    font-weight: 100px;
+.d-none{
+    display: none;
+}
+
+body{
+    background: red;
 }
