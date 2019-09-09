@@ -1,6 +1,9 @@
+body {
+    background-color: #000000;
+}
+
 #gameStart {
     background-color: #DF5500;
-    border: solid thick #000000;
     display: block;
     font-family: 'Creepster', cursive;
     margin: auto;
@@ -11,7 +14,6 @@
 
 #triviaGame {
     background-color: #DF5500;
-    border: solid thick #000000;
     display: block;
     margin: auto;
     max-width: 620px;
@@ -30,7 +32,6 @@ p {
 
 #endGame {
     background-color: #DF5500;
-    border: solid thick #000000;
     display: block;
     font-family: 'Creepster', cursive;
     margin: auto;
