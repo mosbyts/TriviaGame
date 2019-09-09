@@ -1,0 +1,40 @@
+#gameStart {
+    background-color: #DF5500;
+    border: solid thick #000000;
+    display: inline-block;
+    font-family: 'Creepster', cursive;
+    margin: auto;
+    max-width: 620px;
+    padding: 10px;
+    text-align: center;
+}
+
+#triviaGame {
+    background-color: #DF5500;
+    border: solid thick #000000;
+    display: block;
+    margin: auto;
+    max-width: 620px;
+    padding: 10px;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Creepster', cursive;
+    text-align: center;
+}
+
+p {
+    font-family: 'Creepster', cursive;
+}
+
+#endGame {
+    background-color: #DF5500;
+    border: solid thick #000000;
+    display: block;
+    font-family: 'Creepster', cursive;
+    margin: auto;
+    max-width: 620px;
+    padding: 10px;
+    text-align: center;
+}
