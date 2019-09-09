@@ -1,5 +1,5 @@
 # TriviaGame
-The TriviaGame is a game used to check the users knowledge (or ability to correctly guess). The user will be given multiple questions to answer and at the end of the game will receive their total score.
+The TriviaGame is a game used to check the users Halloween knowledge (or ability to correctly guess). The user will be given multiple questions to answer and at the end of the game will receive their total score.
 
 This game was created as part of the University of Richmond Full Stack Flex Web Development program curriculum to further JavaScript skills. It is useful in practicing basic JS skills and furthering jQuery skills.
 

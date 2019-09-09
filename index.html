@@ -15,12 +15,13 @@
 <body>
 <div id="gameStart">
     <h1>Tianna's Halloween Trivia!</h1>
-        <p>Player, you will have 30 seconds to correctly answer eight questions
+        <p>Player, you will have 60 seconds to correctly answer eight questions
         based on Halloween history. Let's test your knowledge! Click the 
         button below to begin.</p>
+        <button id="startGame">Start Game</button>
 </div>
 <!--Trivia Game-->
-<div id="triviaGame" class="d-none">
+<div id="triviaGame">
     <h2>Time Remaining: <span id="timeLeft">60</span> seconds</h2>
     <form id="triviaQuestions">
         <p class="Question">What is Candy Corn's originally marketed name?</p>
@@ -79,11 +80,11 @@
                 <input type="radio" name="choice8" value="0"> Cantelope
                 <input type="radio" name="choice8" value="0"> None of the above
             </div>
-        <button>Submit</button>
     </form>
+        <button id="submitTrivia">Submit</button>
     </div>
 <!--End of game-->
-    <div id="endGame" class="d-none">
+    <div id="endGame">
         <p>Time is up!</p>
         <p class="Score">Correct: <span id="correctAnswers"></span></p>
         <p class="Score">Wrong: <span id="wrongAnswers"></span></p>
