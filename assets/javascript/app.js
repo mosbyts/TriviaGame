@@ -1,3 +1,4 @@
+$(document).ready(function(){
                 //*GAME LOAD*//
 
 //Sets timer to 60 and answer variables equal to zero.
@@ -77,4 +78,5 @@ $("#submitTrivia").click(function(){
         $("#correctAnswers").text(correctAnswer);
         $("#wrongAnswers").text(wrongAnswer);
         $("#Unanswered").text(Unanswered); 
+});
 });

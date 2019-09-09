@@ -1,7 +1,7 @@
 #gameStart {
     background-color: #DF5500;
     border: solid thick #000000;
-    display: inline-block;
+    display: block;
     font-family: 'Creepster', cursive;
     margin: auto;
     max-width: 620px;
@@ -37,4 +37,8 @@ p {
     max-width: 620px;
     padding: 10px;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
